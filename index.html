@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Página Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
   </head>
-  <body>
-    <header>Baldur's Gate III</header>
+  <body {
+          font-family: Arial, sans-serif;
+          background-color: #f4f4f4;
+        }>
+    <header>María Hernández - Lenguaje de Marcas</header>
     <h1>Baldur's Gate III</h1>
     <nav {
             position: fixed;
@@ -18,7 +22,12 @@
             z-index: 100;
         }>
     </nav>
-    <main>
+    <main {
+      display: grid;
+      grid-template-colums: 3fr 1fr;
+      gap: 20px;
+      padding-top: 80px;
+    }>
       <article>
         <h2>Un artículo de bg3</h2>
         <p>contenido del artículo</p>
