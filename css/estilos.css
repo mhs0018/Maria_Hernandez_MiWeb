@@ -1,9 +1,9 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
+  background-color: rgb(27, 27, 27)
 }
 p {
-  color: black;
+  color: whitesmoke;
 }
 .texto-verde {
   color: green;
