@@ -107,11 +107,6 @@ main {
   text-align: center;
 }
 
-.parrafo-justificado {
-  text-align: justify;
-  letter-spacing: 0.5px;
-  text-transform: capitalize;
-}
 * {
   box-sizing: border-box;
 }
@@ -121,6 +116,7 @@ main {
   border: 5px solid red;
   margin: 10px;
 }
+
 .hero section {
   background-image: url();
   background-repeat: no-repeat;
@@ -128,13 +124,16 @@ main {
   background-size: cover;
   height: 400px;
 }
+
 ul ul {
   list-style-type: circle;
 }
+
 .mi-tabla {
   border-collapse: collapse;
   width: 100%;
 }
+
 .mi-tabla th,
 .mi-tabla td {
   border: 1px solid #ccc;
