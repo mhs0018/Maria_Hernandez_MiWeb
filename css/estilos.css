@@ -1,3 +1,5 @@
+
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 400;
@@ -43,9 +45,15 @@ h1 {
 
 h2 {
   font-family: "Girassol", serif;
-  color: #ccc;
+  color: #B4b2b0;
   text-shadow: #1b1818;
   text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Girassol", serif;
+  color: #B4b2b0;
+  padding-left: 20px;
 }
 
 p {
@@ -128,17 +136,16 @@ main {
   margin: 10px;
 }
 
-.hero section {
-  background-image: url();
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  height: 400px;
-}
-
 ul ul {
   list-style-type: circle;
 }
+
+nav a {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+}
+
+/* ---TABLAS---*/
 
 .mi-tabla {
   border-collapse: collapse;
@@ -150,4 +157,9 @@ ul ul {
   border: 1px solid #ccc;
   padding: 8px;
   vertical-align: middle;
+}
+
+/* ---LISTAS---*/
+ul li{
+  color: #B4b2b0;
 }
