@@ -1,20 +1,14 @@
-
-
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
-  font-weight: 400;
   font-size: 17px;
   margin: 0;
   padding: 0;
   line-height: 1.6;
   box-sizing: border-box;
-  background: linear-gradient(
-    135deg,
-    #383431 0%,
-    #2e2a28 33%,
-    #272321 66%,
-    #1b1818 100%
-  );
+  background-image: url("https://docs.baldursgate3.game/skins/Larian/resources/images/background.png?242d3"),
+    radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+  background-blend-mode: multiply;
+  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -45,20 +39,20 @@ h1 {
 
 h2 {
   font-family: "Girassol", serif;
-  color: #B4b2b0;
+  color: #b4b2b0;
   text-shadow: #1b1818;
   text-transform: uppercase;
 }
 
 h3 {
   font-family: "Girassol", serif;
-  color: #B4b2b0;
+  color: #b4b2b0;
   padding-left: 20px;
 }
 
 p {
   text-align: justify;
-  color: #B4b2b0;
+  color: #b4b2b0;
 }
 
 #nav-menu {
@@ -130,19 +124,13 @@ main {
 * {
   box-sizing: border-box;
 }
-.mi-caja {
-  width: 300px;
-  padding: 20px;
-  border: 5px solid red;
-  margin: 10px;
-}
 
 ul ul {
   list-style-type: circle;
 }
 
 nav a {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
 }
 
@@ -161,6 +149,6 @@ nav a {
 }
 
 /* ---LISTAS---*/
-ul li{
-  color: #B4b2b0;
+ul li {
+  color: #b4b2b0;
 }
