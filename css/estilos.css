@@ -67,6 +67,7 @@ p {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   z-index: 1000;
   font-size: 0.8rem;
+  justify-content: center;
 }
 
 #nav-menu a {
