@@ -1,3 +1,5 @@
+/* ---CONTENIDO PRINCIPAL--- */
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
@@ -6,19 +8,31 @@ body {
   line-height: 1.6;
   box-sizing: border-box;
   background-image: url("https://docs.baldursgate3.game/skins/Larian/resources/images/background.png?242d3"),
-    radial-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9));
+    radial-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7));
   background-blend-mode: multiply;
   background-size: cover;
   background-attachment: fixed;
 }
 
+* {
+  color: #b4b2b0;
+}
+
+p {
+  text-align: justify;
+  color: #b4b2b0;
+}
+
+/* ---HEADER--- */
+
 header {
   padding-top: 50px;
-  background-image: linear-gradient(
-      to right,
-      rgba(34, 34, 34, 0) 10%,
-      rgba(34, 34, 34, 0.8) 50%,
-      rgba(34, 34, 34, 0) 80%
+  padding-bottom: 10px;
+  background-image: radial-gradient(
+      circle at center,      /* círculo centrado */
+      rgba(34, 34, 34, 0.2) 0%,  /* centro más claro */
+      rgba(34, 34, 34, 0.8) 70%, /* borde más oscuro */
+      rgba(34, 34, 34, 0) 100%    /* muy transparente afuera */
     ),
     url(https://baldursgate3.game/jpg/buy-now-background.jpg);
   background-repeat: no-repeat;
@@ -26,6 +40,8 @@ header {
   background-position: center;
   text-align: center;
 }
+
+/* ---Hs--- */
 
 h1 {
   font-family: "Cinzel Decorative", serif;
@@ -35,6 +51,7 @@ h1 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin-bottom: 0.2rem;
 }
 
 h2 {
@@ -50,10 +67,16 @@ h3 {
   padding-left: 20px;
 }
 
-p {
-  text-align: justify;
-  color: #b4b2b0;
+.h2-other {
+  font-family: "Cinzel Decorative", serif;
+  font-size: 2rem;
+  color: #d4b56a;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  padding: 20px;
 }
+
+/* ---NAV--- */
 
 #nav-menu {
   position: fixed;
@@ -96,45 +119,109 @@ p {
   margin: 0;
 }
 
-main {
-  display: grid;
-  grid-template-columns: 3fr 1fr;
-  gap: 20px;
-  padding-top: 80px;
-}
-
-.sub-header {
-  font-family: "Girassol", serif;
-  font-size: 0.75rem;
-  color: #d4b56a;
-  text-align: center;
-  padding: 0%;
-  margin: 0%;
-}
-
-.h2-other {
-  font-family: "Cinzel Decorative", serif;
-  font-size: 2rem;
-  color: #d4b56a;
-  text-align: center;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  padding: 20px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-ul ul {
-  list-style-type: circle;
-}
-
 nav a {
   font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
 }
 
-/* ---TABLAS---*/
+/* ---DIV & MAIN--- */
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100px 20px 40px 20px;
+  align-items: stretch;
+}
+
+.main-content {
+  background: rgba(28, 26, 24, 0.85);
+  border: 1px solid #4a3e2f;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+/* ---SECTION & ARTICLE--- */
+
+.panel {
+  background: rgba(28, 26, 24, 0.85);
+  border: 1px solid #4a3e2f;
+  margin: 25px 0;
+  border-radius: 6px;
+}
+
+.panel-header {
+  background: rgba(60, 52, 44, 0.9);
+  padding: 12px 18px;
+  font-size: 20px;
+  color: #f4dcb2;
+  border-bottom: 1px solid #3a3228;
+  border-radius: 6px 6px 0 0;
+}
+
+.panel-body {
+  padding: 18px;
+}
+
+.card-section {
+  background: rgba(20, 18, 17, 0.8);
+  border: 2px solid #8b6b43;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.5);
+}
+
+.sub-header {
+  font-family: "Girassol", serif;
+  font-size: 1rem;
+  color: #d4b56a;
+  text-align: center;
+  padding: 0%;
+  margin-top: 0.2rem;
+}
+
+/* ---SECCIONES--- */
+
+.hero-section {
+  background: rgba(18, 16, 15, 0.85);
+  border: 1px solid #6c5945;
+  padding: 35px;
+  margin: 40px 0;
+  border-radius: 10px;
+}
+
+.hero-section p {
+  font-size: 20px;
+  color: #e6d7c4;
+}
+
+/* ---GRID--- */
+
+.section-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+/* ---ASIDE--- */
+
+.sidebar {
+  background: rgba(26, 22, 20, 0.9);
+  padding: 25px;
+  border: 1px solid #4b3f2e;
+  border-radius: 6px;
+  position: sticky;
+  top: 20px;
+  align-self: start;
+}
+
+/* ---FOOTER--- */
+
+/* ---TABLAS--- */
 
 .mi-tabla {
   border-collapse: collapse;
@@ -148,7 +235,11 @@ nav a {
   vertical-align: middle;
 }
 
-/* ---LISTAS---*/
+/* ---LISTAS--- */
 ul li {
   color: #b4b2b0;
 }
+
+/* ---FORMULARIO--- */
+
+/* ---IMAGENES--- */
