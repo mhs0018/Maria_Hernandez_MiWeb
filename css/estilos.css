@@ -7,6 +7,11 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Quadrat";
+  src: url("../fonts/Quadrat-Regular.otf") format(truetype);
+}
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
@@ -59,14 +64,26 @@ h1 {
 }
 
 h2 {
-  font-family: "Girassol", serif;
+  font-family: "Quadrat", serif;
+  font-weight: 100;
   color: #b4b2b0;
-  text-shadow: #1b1818;
   text-transform: uppercase;
 }
 
+#h2 {
+  font-family: "Quadrat", serif;
+  font-weight: 100;
+  color: #b4b2b0;
+  text-shadow: #1b1818;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 h3 {
-  font-family: "Girassol", serif;
+  font-family: "Quadrat", serif;
+  font-size: 120%;
+  font-weight: 100;
+  text-transform: uppercase;
   color: #b4b2b0;
   padding-left: 20px;
 }
@@ -180,10 +197,11 @@ nav a {
 }
 
 .sub-header {
-  font-family: "Girassol", serif;
+  font-family: "Quadrat", serif;
   font-size: 1rem;
   color: #d4b56a;
   text-align: center;
+  text-transform: uppercase;
   padding: 0%;
   padding-bottom: 20px;
   margin-top: 0.2rem;
