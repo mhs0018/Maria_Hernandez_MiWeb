@@ -1,5 +1,12 @@
 /* ---CONTENIDO PRINCIPAL--- */
 
+@font-face {
+  font-family: "Sherwood";
+  src: url("../fonts/Sherwood.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 17px;
@@ -23,18 +30,14 @@ p {
   color: #b4b2b0;
 }
 
+strong {
+  color: #8c6b2a;
+}
+
 /* ---HEADER--- */
 
 header {
   padding-top: 50px;
-  padding-bottom: 10px;
-  background-image: radial-gradient(
-      circle at center,      /* círculo centrado */
-      rgba(34, 34, 34, 0.2) 0%,  /* centro más claro */
-      rgba(34, 34, 34, 0.8) 70%, /* borde más oscuro */
-      rgba(34, 34, 34, 0) 100%    /* muy transparente afuera */
-    ),
-    url(https://baldursgate3.game/jpg/buy-now-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -44,13 +47,14 @@ header {
 /* ---Hs--- */
 
 h1 {
-  font-family: "Cinzel Decorative", serif;
-  font-size: 4rem;
-  font-weight: 700;
-  background: linear-gradient(45deg, #d4b56a, #8c6b2a, #f5e6b0);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  font-family: "Sherwood", serif;
+  font-size: 6rem;
+  font-weight: 300;
+  color: #8c6b2a;
+  text-shadow: 1px 1px 1px #222222, 1px 2px 1px #222222, 1px 3px 1px #222222,
+    1px 4px 1px #222222, 1px 5px 1px #222222, 1px 6px 1px #222222,
+    1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2),
+    1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
   margin-bottom: 0.2rem;
 }
 
@@ -68,8 +72,8 @@ h3 {
 }
 
 .h2-other {
-  font-family: "Cinzel Decorative", serif;
-  font-size: 2rem;
+  font-family: "Sherwood", serif;
+  font-size: 220%;
   color: #d4b56a;
   text-align: center;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
@@ -181,6 +185,7 @@ nav a {
   color: #d4b56a;
   text-align: center;
   padding: 0%;
+  padding-bottom: 20px;
   margin-top: 0.2rem;
 }
 
