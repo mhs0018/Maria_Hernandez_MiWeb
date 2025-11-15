@@ -42,7 +42,7 @@ strong {
 /* ---HEADER--- */
 
 header {
-  padding-top: 50px;
+  padding-top: 20px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -94,7 +94,7 @@ h3 {
   color: #d4b56a;
   text-align: center;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  padding: 20px;
+  padding-top: 50px;
 }
 
 /* ---NAV--- */
@@ -154,7 +154,7 @@ nav a {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 100px 20px 40px 20px;
+  padding: 80px 20px 40px 20px;
   align-items: stretch;
 }
 
