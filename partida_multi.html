@@ -40,12 +40,24 @@
         <form action="">
           <fieldset>
             <legend>¿Quieres participar?</legend>
-            <label for="name">Nombre y Apellidos <span class="required">*</span></label>
+            <label for="name"
+              >Nombre y Apellidos <span class="required">*</span></label
+            >
             <input type="text" id="nombre" name="nombre_usuario" required />
             <label for="email">Email <span class="required">*</span></label>
             <input type="email" id="email" name="email_usuario" required />
-            <label for="discord">Usuario de Discord <span class="required">*</span></label>
-            <input type="text" id="discord" name="discord_usuario" required />
+            <label for="discord"
+              >Usuario de Discord <span class="required">*</span></label
+            >
+            <input
+              type="text"
+              id="discord"
+              name="discord_usuario"
+              pattern="[a-z0-9_]{2,32}#[0-9]{4}"
+              placeholder="usuario#1234"
+              title="Formato: usuario#1234 (letras minúsculas, números y guiones bajos seguidos de # y 4 dígitos)"
+              required
+            />
             <label for="clase">Clase preferida</label>
             <select id="clase" name="clase_preferida">
               <option value="">-- Elige una clase --</option>
@@ -74,13 +86,36 @@
               <span class="range-value" id="edad-valor">18</span>
               <span class="range-max">30</span>
             </div>
-            
+
+            <label for="hora_preferida">Hora preferida para jugar</label>
+            <input type="time" id="hora_preferida" name="hora_preferida" />
+
+            <label for="horas">Horas disponibles por semana</label>
+            <input
+              type="number"
+              id="horas"
+              name="horas_semana"
+              min="1"
+              max="40"
+            />
+
             <div class="checkbox-group">
-              <input type="checkbox" id="normas" name="acepto_normas" required />
-              <label for="normas">Acepto las normas de convivencia <span class="required">*</span></label>
+              <input
+                type="checkbox"
+                id="normas"
+                name="acepto_normas"
+                required
+              />
+              <label for="normas"
+                >Acepto las normas de convivencia
+                <span class="required">*</span></label
+              >
             </div>
-            
-            <button type="submit">Enviar</button>
+
+            <div class="button-group">
+              <button type="submit">Enviar</button>
+              <button type="reset">Borrar</button>
+            </div>
           </fieldset>
         </form>
         <section>

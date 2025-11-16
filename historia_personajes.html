@@ -144,12 +144,14 @@
                   <td>Personalizable</td>
                   <td>Presa del tormento</td>
                 </tr>
+              </tbody>
+              <tfoot>
                 <tr>
                   <td colspan="4" class="note">
                     Nota: Datos basados en las configuraciones por defecto.
                   </td>
                 </tr>
-              </tbody>
+              </tfoot>
             </table>
           </article>
         </section>
@@ -172,11 +174,23 @@
               <li>Nombre (por defecto aparece como <em>Tav</em>)</li>
               <li>Género</li>
               <li>
-                Raza: elfo, medio elfo, drow, humano, tiefling, enano, mediano, gnomo, githyanki, medio orco y dracónido. La mayoría de razas tienen subrazas que puedes elegir.
+                <details>
+                  <summary class="summary-raza">Raza</summary>
+                  <div style="margin-top: 8px;">
+                    Elfo, medio elfo, drow, humano, tiefling, enano, mediano, gnomo, githyanki, medio orco y dracónido. La mayoría de razas tienen subrazas que puedes elegir.
+                  </div>
+                </details>
               </li>
               <li>Estructura facial</li>
               <li>Apariencia corporal</li>
-              <li>Clase: pícaro, mago, clérigo, guerrero, bárbaro, brujo, hechicero, explorador y paladín. Todas tienen sus respectivas subclases.</li>
+              <li>
+                <details>
+                  <summary class="summary-clase">Clase</summary>
+                  <div style="margin-top: 8px;">
+                    Pícaro, mago, clérigo, guerrero, bárbaro, brujo, hechicero, explorador y paladín. Todas tienen sus respectivas subclases.
+                  </div>
+                </details>
+              </li>
               <li>Trasfondo</li>
             </ul>
             <h4>Guía de Creación de Personaje</h4>
@@ -189,7 +203,7 @@
             <div class="char-image-container">
               <img src="../imgs/Captura de pantalla 2025-11-16 132442.png" alt="tav-icon">
             </div>
-            <table border="1" cellpadding="8" style="border-collapse: collapse; width: 100%; text-align: left;">
+            <table class="char-table" cellpadding="8">
               <tr>
     <th colspan="2" class="char-table-name">
       Tav
@@ -204,12 +218,12 @@
   <tr>
     <th>Atributos</th>
     <td>
-      <strong>STR:</strong> 17 &nbsp;
-      <strong>DEX:</strong> 13 &nbsp;
-      <strong>CON:</strong> 15 &nbsp;
-      <strong>INT:</strong> 10 &nbsp;
-      <strong>WIS:</strong> 12 &nbsp;
-      <strong>CHA:</strong> 8
+      <strong>STR:</strong> 17<sub>+3</sub> &nbsp;
+      <strong>DEX:</strong> 13<sub>+1</sub> &nbsp;
+      <strong>CON:</strong> 15<sub>+2</sub> &nbsp;
+      <strong>INT:</strong> 10<sub>+0</sub> &nbsp;
+      <strong>WIS:</strong> 12<sub>+1</sub> &nbsp;
+      <strong>CHA:</strong> 8<sub>-1</sub>
     </td>
   </tr>
   <tr>
@@ -229,9 +243,24 @@
   <tr>
     <th>Competencias</th>
     <td>
-      <strong>Armas:</strong> Armas Simples, Armas Marciales, Espadas Largas, Espadas Cortas, Ballestas de Mano<br>
-      <strong>Armadura:</strong> Armadura Ligera, Armadura Media, Armadura Pesada, Escudos<br>
-      <strong>Habilidades:</strong> Atletismo, Juego de Manos, Sigilo, Percepción, Intimidación
+      <details>
+        <summary class="summary-armas">Armas</summary>
+        <div style="margin-top: 8px;">
+          Armas Simples, Armas Marciales, Espadas Largas, Espadas Cortas, Ballestas de Mano
+        </div>
+      </details>
+      <details>
+        <summary class="summary-armadura">Armadura</summary>
+        <div style="margin-top: 8px;">
+          Armadura Ligera, Armadura Media, Armadura Pesada, Escudos
+        </div>
+      </details>
+      <details>
+        <summary class="summary-habilidades">Habilidades</summary>
+        <div style="margin-top: 8px;">
+          Atletismo, Juego de Manos, Sigilo, Percepción, Intimidación
+        </div>
+      </details>
     </td>
   </tr>
 </table>
