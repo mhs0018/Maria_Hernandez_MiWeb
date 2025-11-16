@@ -44,16 +44,38 @@
             <input type="text" id="nombre" name="nombre_usuario" required />
             <label for="email">Email:</label>
             <input type="email" id="email" name="email_usuario" required />
+            <label for="discord">Usuario de Discord</label>
+            <input type="text" id="discord" name="discord_usuario" />
+
+            <label for="clase">Clase preferida</label>
+            <select id="clase" name="clase_preferida">
+              <option value="">-- Elige una clase --</option>
+              <option value="picaro">Pícaro</option>
+              <option value="mago">Mago</option>
+              <option value="clerigo">Clérigo</option>
+              <option value="guerrero">Guerrero</option>
+              <option value="barbaro">Bárbaro</option>
+              <option value="brujo">Brujo</option>
+              <option value="hechicero">Hechicero</option>
+              <option value="explorador">Explorador</option>
+              <option value="paladín">Paladín</option>
+            </select>
             <label for="edad">Edad</label>
-            <input
-              type="range"
-              id="edad"
-              name="edad_usuario"
-              min="18"
-              max="30"
-              required
-            />
-            <button type="submit">submit</button>
+            <div class="range-row">
+              <span class="range-min">18</span>
+              <input
+                type="range"
+                id="edad"
+                name="edad_usuario"
+                min="18"
+                max="30"
+                value="18"
+                required
+              />
+              <span class="range-value" id="edad-valor">18</span>
+              <span class="range-max">30</span>
+            </div>
+            <button type="submit">Enviar</button>
           </fieldset>
         </form>
       </main>
@@ -69,8 +91,19 @@
       </aside>
     </div>
 
-        <footer>
+    <footer>
       <p>Copyright 2025 - María Hernández</p>
     </footer>
+    <script>
+      (function(){
+        var range = document.getElementById('edad');
+        var display = document.getElementById('edad-valor');
+        if (!range || !display) return;
+        // inicializar
+        display.textContent = range.value || range.min;
+        // actualizar mientras se mueve
+        range.addEventListener('input', function(){ display.textContent = this.value; });
+      })();
+    </script>
   </body>
 </html>
