@@ -78,6 +78,13 @@
             <button type="submit">Enviar</button>
           </fieldset>
         </form>
+        <section>
+          <p>
+            Se te enviará al correo un enlace con el servidor de Discord.<br />
+            El incumplimiento de las normas de convivencia puede resultar en la
+            expulsión de la partida y del servidor.
+          </p>
+        </section>
       </main>
 
       <aside class="sidebar">
@@ -87,7 +94,7 @@
           Sé el primero en recibir noticias sobre nuevos projectos del estudio,
           novedades a cerca de BG3 o interactua con otros fans.
         </p>
-        <p>O </p>
+        <p>O suíguelos en sus redes sociales.</p>
       </aside>
     </div>
 
@@ -95,14 +102,14 @@
       <p>Copyright 2025 - María Hernández</p>
     </footer>
     <script>
-      (function(){
-        var range = document.getElementById('edad');
-        var display = document.getElementById('edad-valor');
+      (function () {
+        var range = document.getElementById("edad");
+        var display = document.getElementById("edad-valor");
         if (!range || !display) return;
-        // inicializar
         display.textContent = range.value || range.min;
-        // actualizar mientras se mueve
-        range.addEventListener('input', function(){ display.textContent = this.value; });
+        range.addEventListener("input", function () {
+          display.textContent = this.value;
+        });
       })();
     </script>
   </body>

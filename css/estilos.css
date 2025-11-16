@@ -363,11 +363,10 @@ ul li {
   background: rgba(255,255,255,0.02);
   color: #d6d4d2;
   font-size: 1rem;
-  box-sizing: border-box; /* evitar que padding haga overflow */
+  box-sizing: border-box;
   max-width: 100%;
 }
 
-/* Estilos específicos para selects para integrar la estética */
 .main-content select {
   -webkit-appearance: none;
   appearance: none;
@@ -389,68 +388,37 @@ ul li {
   color: #d6d4d2;
 }
 
-/* Para navegadores que no muestran el SVG en background, asegurar contraste */
-@supports (-webkit-appearance: none) {
-  .main-content select { background-color: rgba(255,255,255,0.02); }
+.main-content textarea {
+  min-height: 100px;
+  resize: vertical;
 }
-
-.main-content textarea { min-height: 100px; resize: vertical; }
 
 .main-content input[type="range"] {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
   height: 6px;
-  background: transparent;
-  margin-top: 6px;
-}
-
-/* WebKit */
-.main-content input[type="range"]::-webkit-slider-runnable-track {
-  height: 6px;
-  background: #5a3e2a; /* color sólido, sin gradiente */
-  border-radius: 6px;
-}
-.main-content input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 18px;
-  height: 18px;
-  background: #fbcea0;
-  border-radius: 50%;
-  margin-top: -6px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
-  cursor: pointer;
-}
-
-/* Firefox */
-.main-content input[type="range"]::-moz-range-track {
-  height: 6px;
-  background: #5a3e2a; /* color sólido, sin gradiente */
-  border-radius: 6px;
-}
-.main-content input[type="range"]::-moz-range-thumb {
-  width: 18px;
-  height: 18px;
-  background: #fbcea0;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-}
-
-/* IE */
-.main-content input[type="range"]::-ms-track {
-  background: transparent;
-  border-color: transparent;
-  color: transparent;
-  height: 6px;
-}
-.main-content input[type="range"]::-ms-fill-lower {
   background: #5a3e2a;
   border-radius: 6px;
+  margin-top: 6px;
+  cursor: pointer;
 }
-.main-content input[type="range"]::-ms-fill-upper {
-  background: #5a3e2a; /* unificado a color sólido */
-  border-radius: 6px;
+
+/* Thumb */
+.main-content input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background: #fbcea0;
+  border-radius: 50%;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.45);
+  cursor: pointer;
+}
+
+.main-content input[type="range"]:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px rgba(251,206,160,0.09);
 }
 
 .main-content .age-note {
@@ -459,7 +427,6 @@ ul li {
   margin-top: 8px;
 }
 
-/* Visualizador del valor del range */
 .range-row {
   display: flex;
   align-items: center;
@@ -492,7 +459,7 @@ ul li {
 
 .main-content button,
 .main-content input[type="submit"] {
-  background: linear-gradient(180deg,#fbcea0,#d8b37a);
+  background: #fbcea0;
   color: #222;
   border: none;
   padding: 10px 16px;
@@ -514,10 +481,9 @@ ul li {
   .main-content fieldset { padding: 14px; }
 }
 
-/* Ajustes responsivos para evitar que las casillas sobresalgan del layout */
 @media (max-width: 900px) {
   .layout {
-    grid-template-columns: 1fr; /* una columna para evitar overflow */
+    grid-template-columns: 1fr;
     padding: 20px;
   }
   .sidebar {
@@ -531,7 +497,7 @@ ul li {
   .main-content select { padding-right: 34px; }
 }
 
-/* ---IMAGENES--- */
+/* ---IMAGENES  Y VIDEOS--- */
 
 .mi-imagen {
   width: 100%;
@@ -545,4 +511,19 @@ ul li {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* proporción 16:9 */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
