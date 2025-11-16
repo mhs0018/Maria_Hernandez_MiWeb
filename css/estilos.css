@@ -321,12 +321,6 @@ th {
   font-size: 1.2em;
 }
 
-.char-table-name {
-  font-family: "Sherwood", serif;
-  text-align: center;
-  font-size: 1.2em;
-}
-
 .note {
   font-size: 80%;
   text-align: left;
@@ -542,6 +536,19 @@ ul li {
   border-radius: 8px;
   display: block;
   margin: 0 auto;
+}
+
+.char-image-container {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.char-image-container img {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 8px;
 }
 
 .video-container {
