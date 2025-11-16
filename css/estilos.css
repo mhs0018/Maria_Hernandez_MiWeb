@@ -92,6 +92,10 @@ details[open] summary {
   margin-bottom: 8px;
 }
 
+.details-content {
+  margin-top: 8px;
+}
+
 /* ---HEADER--- */
 
 header {
@@ -354,6 +358,11 @@ tr:nth-child(odd) {
 
 .char-table-name {
   font-family: "Sherwood", serif;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.char-info {
   text-align: center;
   font-size: 1.2em;
 }
